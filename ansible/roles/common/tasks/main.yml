@@ -1,0 +1,16 @@
+---
+
+
+# "apt_repository" Ansible module depends on "python-apt" package
+- name: Make sure that "python-apt" package is installed
+  sudo: yes
+  apt:
+    pkg: python-apt
+    state: present
+
+# in case HTTPS repositories URLs will be used
+- name: Make sure that "apt" supports HTTPS protocol
+  sudo: yes
+  apt:
+    pkg: apt-transport-https
+    state: present

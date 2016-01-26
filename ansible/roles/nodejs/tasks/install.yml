@@ -1,0 +1,25 @@
+---
+
+
+- name: Make sure that Node.js "apt" key is added
+  sudo: yes
+  apt_key:
+    id: "{{ nodejs_key_id }}"
+    state: present
+    url: "{{ nodejs_key_url }}"
+  when: nodejs_key_url != false
+
+- name: Make sure Node.js "apt" repository URL is added
+  sudo: yes
+  apt_repository:
+    repo: "{{ nodejs_repository }}"
+    state: present
+    update_cache: yes
+  when: nodejs_repository != false
+
+- name: Make sure that latest version of Node.js is installed
+  sudo: yes
+  apt:
+    update_cache: yes
+    pkg: nodejs
+    state: latest
