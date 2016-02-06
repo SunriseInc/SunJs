@@ -1,0 +1,28 @@
+{
+  "name": "sunjs",
+  "version": "0.1.0",
+  "description": "",
+  "main": "sunjs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SunriseInc/SunJs.git"
+  },
+  "author": {
+    "name": "Jane Poltoratskaya",
+    "email": "lass85@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Denis Poltoratsky",
+      "email": "356187@gmail.com"
+    }
+  ],
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/SunriseInc/SunJs/issues"
+  },
+  "homepage": "https://github.com/SunriseInc/SunJs#readme"
+}

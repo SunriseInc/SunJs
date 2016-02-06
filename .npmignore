@@ -1,0 +1,5 @@
+.vagrant
+.idea
+ansible
+Vagrantfile
+index.js
